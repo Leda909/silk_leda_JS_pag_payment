@@ -28,7 +28,7 @@ function pagination() {
     var selector = $('.active').attr('data-filter');
     $.ajax({
         type: 'GET',
-        url: '/Adel2_webportfolio/Silkleda_product_sql+JsGall_DbWebp_pagi/ToJson_one_search.php?keyword='+selector,
+        url: '/ToJson_one_search.php?keyword='+selector,
         success: function(response) {
             done(response);
          }
