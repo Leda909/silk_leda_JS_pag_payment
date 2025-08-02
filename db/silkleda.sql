@@ -101,6 +101,7 @@ CREATE TABLE IF NOT EXISTS orders(
     order_id INT(10) NOT NULL,
     user_id INT(10) NOT NULL,
     order_date timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(order_id),
     FOREIGN KEY(user_id) REFERENCES users(user_id)
     );
 
